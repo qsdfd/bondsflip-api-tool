@@ -1,4 +1,4 @@
-const httpClientSvc = require('./http/httpClientSvc.js');
+const httpClientSvc = require('./httpClientSvc.js');
 const url = require('url')
 const cnsts = require('../../constants');
 
