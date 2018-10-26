@@ -1,0 +1,22 @@
+module.exports.getJsonByStringPath = function(obj, path) {
+    if(!obj) throw new Error('Response object cannot be undefined or null');
+    if(path){
+        path = path.replace(/\[(\w+)\]/g, '.$1'); // convert indexes to properties
+        path = path.replace(/^\./, '');           // strip a leading dot
+        var a = path.split('.');
+
+        for (var i = 0, n = a.length; i < n; ++i) {
+            try{
+                var k = a[i];
+                if (k in obj) {
+                    obj = obj[k];
+                }else{
+                    return null;
+                }
+            }catch(err){
+                return null;
+            }
+        }
+    }
+    return obj;
+};

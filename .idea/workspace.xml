@@ -3,7 +3,11 @@
   <component name="ChangeListManager">
     <list default="true" id="fa7877f6-58de-4768-877f-de1a6ef12d40" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/routes/bondFlipRoutes.js" beforeDir="false" afterPath="$PROJECT_DIR$/api/routes/bondFlipRoutes.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/constants.js" beforeDir="false" afterPath="$PROJECT_DIR$/api/constants.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/services/bll/bondFlipSvc.js" beforeDir="false" afterPath="$PROJECT_DIR$/api/services/bll/bondFlipSvc.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/services/dal/httpClientSvc.js" beforeDir="false" afterPath="$PROJECT_DIR$/api/services/dal/http/httpClientSvc.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/services/dal/priceFormatterSvc.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/services/dal/priceRawResponseGetterSvc.js" beforeDir="false" afterPath="$PROJECT_DIR$/api/services/dal/rawResponseGetterSvc.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -45,14 +49,42 @@
         </counts>
       </usages-collector>
     </session>
+    <session id="-2100632358">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.open.time.12" value="1" />
+          <entry key="project.opened" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="js" value="927" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="JavaScript" value="927" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="js" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="JavaScript" value="1" />
+        </counts>
+      </usages-collector>
+    </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/api/services/dal/priceRawResponseGetterSvc.js">
+        <entry file="file://$PROJECT_DIR$/api/services/dal/rawResponseGetterSvc.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="19" column="23" lean-forward="true" selection-start-line="19" selection-start-column="23" selection-end-line="19" selection-end-column="23" />
+            <state relative-caret-position="96">
+              <caret line="9" column="35" selection-start-line="9" selection-start-column="15" selection-end-line="9" selection-end-column="35" />
             </state>
           </provider>
         </entry>
@@ -66,11 +98,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/api/services/dal/priceFormatterSvc.js">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/api/services/dal/dataFormatterSvc.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="6" column="21" lean-forward="true" selection-start-line="6" selection-start-column="21" selection-end-line="6" selection-end-column="21" />
+            <state relative-caret-position="69">
+              <caret line="22" column="14" lean-forward="true" selection-start-line="22" selection-start-column="14" selection-end-line="22" selection-end-column="14" />
             </state>
           </provider>
         </entry>
@@ -79,7 +111,7 @@
         <entry file="file://$PROJECT_DIR$/api/routes/bondFlipRoutes.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="68">
-              <caret line="4" column="37" lean-forward="true" selection-start-line="4" selection-start-column="37" selection-end-line="4" selection-end-column="37" />
+              <caret line="4" column="37" selection-start-line="4" selection-start-column="37" selection-end-line="4" selection-end-column="37" />
             </state>
           </provider>
         </entry>
@@ -87,26 +119,35 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/api/services/bll/bondFlipSvc.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="5" column="1" lean-forward="true" selection-start-line="5" selection-start-column="1" selection-end-line="5" selection-end-column="1" />
+            <state relative-caret-position="34">
+              <caret line="2" selection-start-line="2" selection-end-line="8" selection-end-column="7" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/api/services/dal/httpClientSvc.js">
+        <entry file="file://$PROJECT_DIR$/api/services/dal/http/httpClientSvc.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="34">
-              <caret line="2" column="40" lean-forward="true" selection-start-line="2" selection-start-column="40" selection-end-line="2" selection-end-column="40" />
+              <caret line="2" column="3" selection-start-line="2" selection-start-column="3" selection-end-line="2" selection-end-column="3" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/api/services/dal/jsonDataAccessorSvc.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="7" selection-start-column="7" selection-end-column="7" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/api/constants.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" column="22" selection-start-line="2" selection-start-column="4" selection-end-line="2" selection-end-column="22" />
+            <state relative-caret-position="17">
+              <caret line="1" column="98" selection-start-line="1" selection-start-column="98" selection-end-line="1" selection-end-column="98" />
             </state>
           </provider>
         </entry>
@@ -130,6 +171,12 @@
       </list>
     </option>
   </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>getWebPageResponse</find>
+      <find>13190</find>
+    </findStrings>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
@@ -141,9 +188,16 @@
         <option value="$PROJECT_DIR$/api/services/httpClientSvc.js" />
         <option value="$PROJECT_DIR$/api/services/priceFormatterSvc.js" />
         <option value="$PROJECT_DIR$/api/services/priceRawResponseGetterSvc.js" />
-        <option value="$PROJECT_DIR$/api/services/dal/priceRawResponseGetterSvc.js" />
-        <option value="$PROJECT_DIR$/api/services/dal/priceFormatterSvc.js" />
         <option value="$PROJECT_DIR$/api/routes/bondFlipRoutes.js" />
+        <option value="$PROJECT_DIR$/api/services/dal/priceRawResponseGetterSvc.js" />
+        <option value="$PROJECT_DIR$/api/services/dal/httpClientSvc.js" />
+        <option value="$PROJECT_DIR$/api/services/dal/priceFormatterSvc.js" />
+        <option value="$PROJECT_DIR$/api/services/dal/pricesDataFormatterSvc.js" />
+        <option value="$PROJECT_DIR$/api/services/dal/jsonDataAccessorSvc.js" />
+        <option value="$PROJECT_DIR$/api/constants.js" />
+        <option value="$PROJECT_DIR$/api/services/dal/rawResponseGetterSvc.js" />
+        <option value="$PROJECT_DIR$/api/services/dal/dataFormatterSvc.js" />
+        <option value="$PROJECT_DIR$/api/services/bll/bondFlipSvc.js" />
       </list>
     </option>
   </component>
@@ -179,42 +233,42 @@
         <subPane>
           <expand>
             <path>
-              <item name="bondsflipper" type="b2602c69:ProjectViewProjectNode" />
-              <item name="bondsflipper" type="462c0819:PsiDirectoryNode" />
+              <item name="bondsflip-tool" type="b2602c69:ProjectViewProjectNode" />
+              <item name="bondsflip-tool" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="bondsflipper" type="b2602c69:ProjectViewProjectNode" />
-              <item name="bondsflipper" type="462c0819:PsiDirectoryNode" />
+              <item name="bondsflip-tool" type="b2602c69:ProjectViewProjectNode" />
+              <item name="bondsflip-tool" type="462c0819:PsiDirectoryNode" />
               <item name="api" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="bondsflipper" type="b2602c69:ProjectViewProjectNode" />
-              <item name="bondsflipper" type="462c0819:PsiDirectoryNode" />
+              <item name="bondsflip-tool" type="b2602c69:ProjectViewProjectNode" />
+              <item name="bondsflip-tool" type="462c0819:PsiDirectoryNode" />
               <item name="api" type="462c0819:PsiDirectoryNode" />
               <item name="controllers" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="bondsflipper" type="b2602c69:ProjectViewProjectNode" />
-              <item name="bondsflipper" type="462c0819:PsiDirectoryNode" />
+              <item name="bondsflip-tool" type="b2602c69:ProjectViewProjectNode" />
+              <item name="bondsflip-tool" type="462c0819:PsiDirectoryNode" />
               <item name="api" type="462c0819:PsiDirectoryNode" />
               <item name="routes" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="bondsflipper" type="b2602c69:ProjectViewProjectNode" />
-              <item name="bondsflipper" type="462c0819:PsiDirectoryNode" />
+              <item name="bondsflip-tool" type="b2602c69:ProjectViewProjectNode" />
+              <item name="bondsflip-tool" type="462c0819:PsiDirectoryNode" />
               <item name="api" type="462c0819:PsiDirectoryNode" />
               <item name="services" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="bondsflipper" type="b2602c69:ProjectViewProjectNode" />
-              <item name="bondsflipper" type="462c0819:PsiDirectoryNode" />
+              <item name="bondsflip-tool" type="b2602c69:ProjectViewProjectNode" />
+              <item name="bondsflip-tool" type="462c0819:PsiDirectoryNode" />
               <item name="api" type="462c0819:PsiDirectoryNode" />
               <item name="services" type="462c0819:PsiDirectoryNode" />
               <item name="bll" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="bondsflipper" type="b2602c69:ProjectViewProjectNode" />
-              <item name="bondsflipper" type="462c0819:PsiDirectoryNode" />
+              <item name="bondsflip-tool" type="b2602c69:ProjectViewProjectNode" />
+              <item name="bondsflip-tool" type="462c0819:PsiDirectoryNode" />
               <item name="api" type="462c0819:PsiDirectoryNode" />
               <item name="services" type="462c0819:PsiDirectoryNode" />
               <item name="dal" type="462c0819:PsiDirectoryNode" />
@@ -234,6 +288,7 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\KBOBL21\Documents\lol\Projects\bondsflip-tool\api\services\dal\http" />
       <recent name="C:\Users\KBOBL21\Documents\lol\Projects\bondsflipper\api\services\bll" />
       <recent name="C:\Users\KBOBL21\Documents\lol\Projects\bondsflipper\api\services\dal" />
     </key>
@@ -250,6 +305,29 @@
       </list>
     </option>
   </component>
+  <component name="RunManager" selected="Node.js.bondFlipSvc.js">
+    <configuration name="bondFlipSvc.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" nameIsGenerated="true" path-to-js-file="bondFlipSvc.js" working-dir="$PROJECT_DIR$/api/services/bll">
+      <method v="2" />
+    </configuration>
+    <configuration name="dataFormatterSvc.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/api/services/dal/dataFormatterSvc.js" working-dir="$PROJECT_DIR$/api/services/dal">
+      <method v="2" />
+    </configuration>
+    <configuration name="rawResponseGetterSvc.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/api/services/dal/rawResponseGetterSvc.js" working-dir="$PROJECT_DIR$/api/services/dal">
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Node.js.rawResponseGetterSvc.js" />
+      <item itemvalue="Node.js.dataFormatterSvc.js" />
+      <item itemvalue="Node.js.bondFlipSvc.js" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Node.js.bondFlipSvc.js" />
+        <item itemvalue="Node.js.dataFormatterSvc.js" />
+        <item itemvalue="Node.js.rawResponseGetterSvc.js" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -263,11 +341,12 @@
       <workItem from="1538646718527" duration="2750000" />
       <workItem from="1538937869845" duration="8000" />
       <workItem from="1540279570087" duration="3217000" />
+      <workItem from="1540370687219" duration="8722000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="5975000" />
+    <option name="totallyTimeSpent" value="14697000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
@@ -278,7 +357,7 @@
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.60339946" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -286,7 +365,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
-      <window_info anchor="bottom" id="Terminal" order="10" visible="true" weight="0.23937677" />
+      <window_info anchor="bottom" id="Terminal" order="10" weight="0.23937677" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -299,12 +378,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/api/server.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/errors.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/api/controllers/bondFlipCtrl.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
@@ -312,45 +385,58 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/api/services/bll/bondFlipSvc.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="1" lean-forward="true" selection-start-line="5" selection-start-column="1" selection-end-line="5" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/api/routes/bondFlipRoutes.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
-          <caret line="4" column="37" lean-forward="true" selection-start-line="4" selection-start-column="37" selection-end-line="4" selection-end-column="37" />
+          <caret line="4" column="37" selection-start-line="4" selection-start-column="37" selection-end-line="4" selection-end-column="37" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/api/services/dal/httpClientSvc.js">
+    <entry file="file://$PROJECT_DIR$/api/server.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/errors.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/services/dal/http/httpClientSvc.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
-          <caret line="2" column="40" lean-forward="true" selection-start-line="2" selection-start-column="40" selection-end-line="2" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/services/dal/priceFormatterSvc.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="21" lean-forward="true" selection-start-line="6" selection-start-column="21" selection-end-line="6" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/services/dal/priceRawResponseGetterSvc.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="19" column="23" lean-forward="true" selection-start-line="19" selection-start-column="23" selection-end-line="19" selection-end-column="23" />
+          <caret line="2" column="3" selection-start-line="2" selection-start-column="3" selection-end-line="2" selection-end-column="3" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/api/constants.js">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="98" selection-start-line="1" selection-start-column="98" selection-end-line="1" selection-end-column="98" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/services/bll/bondFlipSvc.js">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
-          <caret line="2" column="22" selection-start-line="2" selection-start-column="4" selection-end-line="2" selection-end-column="22" />
+          <caret line="2" selection-start-line="2" selection-end-line="8" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/services/dal/jsonDataAccessorSvc.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="7" selection-start-column="7" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/services/dal/rawResponseGetterSvc.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="96">
+          <caret line="9" column="35" selection-start-line="9" selection-start-column="15" selection-end-line="9" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/services/dal/dataFormatterSvc.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="69">
+          <caret line="22" column="14" lean-forward="true" selection-start-line="22" selection-start-column="14" selection-end-line="22" selection-end-column="14" />
         </state>
       </provider>
     </entry>
