@@ -1,6 +1,6 @@
 const httpClientSvc = require('./httpClientSvc.js');
 const url = require('url')
-const cnsts = require('../../constants');
+const cnsts = require('../../../constants');
 
 
 module.exports.getOSBuddyAPIResponse = function (){

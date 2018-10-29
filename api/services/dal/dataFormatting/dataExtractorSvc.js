@@ -1,6 +1,6 @@
-const rawResponseGetterSvc = require('./rawResponseGetterSvc.js');
+const rawResponseGetterSvc = require('../http/rawResponseGetterSvc.js');
 const jsonDataAccessorSvc = require('./jsonDataAccessorSvc.js');
-const cnsts = require('../../constants');
+const cnsts = require('../../../constants');
 
 
 module.exports.getBondPricesDataFromOSBuddyAPISummaryFromRSBuddy = function(){
