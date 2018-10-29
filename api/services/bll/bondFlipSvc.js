@@ -1,6 +1,6 @@
 const dataComposerSvc = require('../dal/dataFormatting/dataComposerSvc.js');
-let PriceDataView = require('../../schemas/bondPricesDataSchema.js');
 const bondFlipPricesCalculatorSvc = require('./bondFlipPricesCalculatorSvc.js');
+let RootSchema = require('../../models/SchemaModel.js');
 
 
 module.exports.getBondsFlipData = function(){
@@ -12,3 +12,13 @@ module.exports.getBondsFlipData = function(){
             console.log(err)
         })
 }
+
+// new RootSchema(null);
+
+dataComposerSvc.composeBondData()
+    .then(function(data){
+        console.log(data)
+    })
+    .catch(function(err){
+        console.log(err)
+    })
