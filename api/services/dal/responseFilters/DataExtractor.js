@@ -1,4 +1,4 @@
-const jsonFilterSvc = require('./jsonFilterSvc.js');
+const jsonFilterSvc = require('./helpers/jsonFilterSvc.js');
 
 
 module.exports = class {

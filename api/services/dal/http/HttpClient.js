@@ -1,16 +1,10 @@
-const axios = require('axios');
-const urlQueryStringFormatterSvc = require('./urlQueryStringFormatterSvc.js')
+const axiosClient = require('./helpers/axiosClient.js');
+const urlQueryStringFormatterSvc = require('./helpers/urlQueryStringFormatterSvc.js')
 
 module.exports = class {
 
     static getResponse(){
-        return axios.get(this.endpoint())
-            .then(function (response) {
-                return response;
-            })
-            .catch(function (error) {
-                return error;
-            });
+        return axiosClient.get(this.endpoint());
     }
 
     static createEndpoint(urlStr, query){
