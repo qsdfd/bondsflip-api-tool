@@ -13,8 +13,6 @@ module.exports.getBondsFlipData = function(){
         })
 }
 
-// new RootSchema(null);
-
 dataComposerSvc.composeBondData()
     .then(function(data){
         console.log(data)
