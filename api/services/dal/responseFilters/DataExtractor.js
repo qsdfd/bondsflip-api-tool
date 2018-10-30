@@ -1,4 +1,4 @@
-const jsonFilterSvc = require('./helpers/jsonFilterSvc.js');
+const jsonFilter = require('./helpers/jsonFilter.js');
 
 
 module.exports = class {
@@ -9,7 +9,7 @@ module.exports = class {
     static createResponsePromise(promise, filterPath){
         return promise
             .then(function(res){
-                return jsonFilterSvc.getJsonByStringPath(res, filterPath);
+                return jsonFilter.getJsonByStringPath(res, filterPath);
             })
             .catch(function(err){
                 return err

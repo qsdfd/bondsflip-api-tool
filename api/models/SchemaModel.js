@@ -1,12 +1,9 @@
-const joi = require('joi');
+const schemaValidator = require('./schemas/helpers/schemaValidator.js');
 
 module.exports = class {
-
     constructor(dataObj){
-        if(joi.validate(dataObj, this.schema()).error === null){
+        if(schemaValidator.isValid(dataObj, this.schema())){
             return dataObj;
         }
     }
 }
-
-
