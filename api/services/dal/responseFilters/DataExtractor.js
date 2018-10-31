@@ -2,12 +2,12 @@ const jsonFilter = require('./helpers/jsonFilter.js');
 
 
 module.exports = class {
-    static getData(){
-        return this.responsePromise();
+    static filterData(){
+        return this.filteredResponsePromise();
     }
 
-    static createResponsePromise(promise, filterPath){
-        return promise
+    static createFilteredResponsePromise(client, filterPath){
+        return client.getResponse()
             .then(function(res){
                 return jsonFilter.getJsonByStringPath(res, filterPath);
             })

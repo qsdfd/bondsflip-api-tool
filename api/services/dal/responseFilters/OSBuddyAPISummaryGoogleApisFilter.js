@@ -4,9 +4,9 @@ const cnsts = require('../../../constants.js');
 
 
 module.exports = class extends DataExtractor{
-    static responsePromise(){
-        return this.createResponsePromise(
-            OSBuddyAPISummaryGoogleApisClient.getResponse(),
+    static filteredResponsePromise(){
+        return this.createFilteredResponsePromise(
+            OSBuddyAPISummaryGoogleApisClient,
             `data[${cnsts.BOND_ID}]`
         );
     }

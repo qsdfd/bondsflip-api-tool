@@ -4,10 +4,10 @@ const cnsts = require('../../../constants.js');
 
 
 module.exports = class extends DataExtractor{
-    static responsePromise(){
-        return this.createResponsePromise(
-            OSRSGEAPIClient.getResponse(),
-            `data`
+    static filteredResponsePromise(){
+        return this.createFilteredResponsePromise(
+            OSRSGEAPIClient,
+            `data.item`
         );
     }
 }
