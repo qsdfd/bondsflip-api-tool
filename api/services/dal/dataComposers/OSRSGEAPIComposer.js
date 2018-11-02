@@ -13,7 +13,9 @@ module.exports = class extends DataComposerDecorator{
 
     static createDataModelObj(dataObj){
         return new OSRSGEDataModel({
-            osrsGePrice: dataObj.current.price
+            osrs_api : {
+                osrsGePrice: dataObj.current.price
+            }
         });
     }
 }

@@ -13,9 +13,11 @@ module.exports = class extends DataComposerDecorator{
 
     static createDataModelObj(dataObj){
         return new OSBuddyDataModel({
-            avgPrice : dataObj.overall_average,
-            avgBuyPrice : dataObj.buy_average,
-            avgSellPrice : dataObj.sell_average
-        })    ;
+            osbuddy : {
+                avgPrice : dataObj.overall_average,
+                avgBuyPrice : dataObj.buy_average,
+                avgSellPrice : dataObj.sell_average
+            }
+        });
     }
 }
