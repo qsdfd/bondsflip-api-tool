@@ -3,11 +3,11 @@ module.exports.getJsonByStringPath = function(obj, path) {
     if(path){
         path = path.replace(/\[(\w+)\]/g, '.$1'); // convert indexes to properties
         path = path.replace(/^\./, '');           // strip a leading dot
-        var a = path.split('.');
+        let a = path.split('.');
 
-        for (var i = 0, n = a.length; i < n; ++i) {
+        for (let i = 0, n = a.length; i < n; ++i) {
             try{
-                var k = a[i];
+                let k = a[i];
                 if (k in obj) {
                     obj = obj[k];
                 }else{
