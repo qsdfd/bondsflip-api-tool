@@ -15,20 +15,11 @@ const bondFlipPricesCalculatorSvc = require('./bondFlipPricesCalculatorSvc.js');
 //             console.log(err)
 //         })
 // }
-
-// OSBuddyAPISummaryComposer.composeData()
-//     .then(function(data){
-//         console.log(data)
-//     })
-//     .catch(function(err){
-//         console.log(err)
-//     });
-
-
-OSRSGEAPIComposer.composeData()
+OSRSGEAPIComposer.composeData(
+OSBuddyAPISummaryComposer.composeData())
     .then(function(data){
         console.log(data)
     })
     .catch(function(err){
         console.log(err)
-    })
+    });

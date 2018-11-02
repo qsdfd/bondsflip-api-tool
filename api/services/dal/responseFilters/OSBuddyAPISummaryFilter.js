@@ -1,5 +1,5 @@
 const DataExtractor = require('./DataExtractor.js');
-const OSBuddyAPISummaryClient = require('../http/OSBuddyAPISummaryClient.js');
+const OSBuddyAPISummaryClient = require('../httpClients/OSBuddyAPISummaryClient.js');
 const cnsts = require('../../../constants.js');
 
 

@@ -7,12 +7,8 @@ module.exports = class {
     }
 
     static createFilteredResponsePromise(client, filterPath){
-        return client.getResponse()
-            .then(function(res){
+        return client.getResponse().then(function(res){
                 return jsonFilter.getJsonByStringPath(res, filterPath);
             })
-            .catch(function(err){
-                return err
-            });
     }
 }

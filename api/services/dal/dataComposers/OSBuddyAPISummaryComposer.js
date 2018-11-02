@@ -1,9 +1,9 @@
-const DataComposer = require('./DataComposer.js');
+const DataComposerDecorator = require('./DataComposerDecorator.js');
 const OSBuddyAPISummaryFilter = require('../responseFilters/OSBuddyAPISummaryFilter.js');
 const OSBuddyDataModel = require('../../../models/OSBuddyDataModel.js');
 
 
-module.exports = class extends DataComposer{
+module.exports = class extends DataComposerDecorator{
     static composedDataPromise(){
         return this.createComposedDataPromise(
             OSBuddyAPISummaryFilter,
@@ -16,6 +16,6 @@ module.exports = class extends DataComposer{
             avgPrice : dataObj.overall_average,
             avgBuyPrice : dataObj.buy_average,
             avgSellPrice : dataObj.sell_average
-        })    ;
+        });
     }
 }

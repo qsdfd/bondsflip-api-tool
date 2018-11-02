@@ -1,5 +1,5 @@
 const DataExtractor = require('./DataExtractor.js');
-const OSRSGEAPIClient = require('../http/OSRSGEAPIClient.js');
+const OSRSGEAPIClient = require('../httpClients/OSRSGEAPIClient.js');
 const cnsts = require('../../../constants.js');
 
 
