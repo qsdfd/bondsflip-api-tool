@@ -15,7 +15,7 @@ module.exports = class extends DataComposerDecorator{
 
     static createDataModelObj(dataObj){
         return new OSRSGEGraphDataModel({
-            osrs_graph: {
+            osrsGraph: {
                 daily: objectProcessorSvc.getLastItemOfObject(dataObj.daily),
                 average: objectProcessorSvc.getLastItemOfObject(dataObj.average)
             }

@@ -2,7 +2,7 @@ const joi = require('joi');
 
 
 module.exports = joi.object().keys({
-    osrs_api: {
+    osrsApi: {
         osrsGePrice: joi.string().allow('').optional()
     }
 });
