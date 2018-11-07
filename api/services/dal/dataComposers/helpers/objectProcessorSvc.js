@@ -1,4 +1,4 @@
-module.exports.getLastItemOfObject = (obj) => {
+module.exports.getLastItemOfObject = obj => {
     let keysArr = Object.keys(obj);
     let lastKey = keysArr[keysArr.length - 1]
     return obj[lastKey];
