@@ -1,12 +1,7 @@
 const axios = require('axios');
 
 
-module.exports.get = function(url){
-    return axios.get(url)
-        .then(function (response) {
-            return response;
-        })
-        .catch(function (error) {
-            return error;
-        });
-}
+module.exports.get = url =>
+    axios.get(url)
+        .then(response => response)
+        .catch(error => error);

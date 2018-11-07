@@ -9,16 +9,10 @@ module.exports = class extends DataComposerDecorator{
     static composedDataPromise(){
         return this.createComposedDataPromise(
             OSRSGEAPIGraphFilter,
-            this.createDataModelObj
+            dataObj => new OSRSGEGraphDataModel(
+                objectProcessorSvc.getLastItemOfObject(dataObj.daily),
+                objectProcessorSvc.getLastItemOfObject(dataObj.average)
+            )
         );
     }
-
-    static createDataModelObj(dataObj){
-        return new OSRSGEGraphDataModel(
-            objectProcessorSvc.getLastItemOfObject(dataObj.daily),
-            objectProcessorSvc.getLastItemOfObject(dataObj.average)
-        );
-    }
-
-
 }

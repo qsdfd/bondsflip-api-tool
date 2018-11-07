@@ -1,4 +1,4 @@
-module.exports.getJsonByStringPath = function(obj, path) {
+module.exports.getJsonByStringPath = (obj, path) => {
     if(!obj) throw new Error('Response object cannot be undefined or null');
     if(path){
         path = path.replace(/\[(\w+)\]/g, '.$1'); // convert indexes to properties

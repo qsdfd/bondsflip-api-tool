@@ -1,11 +1,4 @@
-module.exports.convertToNumber = function(obj){
-    return convertToType(Number, obj);
-}
+const convertToType = (typeConverterFunc, obj) => obj ? typeConverterFunc(obj) : null;
 
-module.exports.convertToBoolean = function(obj){
-    return convertToType(JSON.parse, obj);
-}
-
-function convertToType(typeConverterFunc, obj){
-    return obj ? typeConverterFunc(obj) : null;
-}
+module.exports.convertToNumber = obj => convertToType(Number, obj);
+module.exports.convertToBoolean = obj => convertToType(JSON.parse, obj);

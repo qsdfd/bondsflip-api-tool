@@ -7,13 +7,9 @@ module.exports = class extends DataComposerDecorator{
     static composedDataPromise(){
         return this.createComposedDataPromise(
             OSRSGEAPIFilter,
-            this.createDataModelObj
-        );
-    }
-
-    static createDataModelObj(dataObj){
-        return new OSRSGEDataModel(
-            dataObj.current.price
+            dataObj => new OSRSGEDataModel(
+                dataObj.current.price
+            )
         );
     }
 }

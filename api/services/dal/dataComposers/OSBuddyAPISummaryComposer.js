@@ -7,17 +7,13 @@ module.exports = class extends DataComposerDecorator{
     static composedDataPromise(){
         return this.createComposedDataPromise(
             OSBuddyAPISummaryFilter,
-            this.createDataModelObj
-        );
-    }
-
-    static createDataModelObj(dataObj){
-        return new OSBuddyDataModel(
-            dataObj.overall_average,
-            dataObj.buy_average,
-            dataObj.buy_quantity,
-            dataObj.sell_average,
-            dataObj.sell_quantity
+            dataObj => new OSBuddyDataModel(
+                dataObj.overall_average,
+                dataObj.buy_average,
+                dataObj.buy_quantity,
+                dataObj.sell_average,
+                dataObj.sell_quantity
+            )
         );
     }
 }
