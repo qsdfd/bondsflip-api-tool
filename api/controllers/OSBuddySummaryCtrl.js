@@ -10,11 +10,9 @@ module.exports = class extends RootController{
     }
 
     static createParamModelObj(req){
-        return new CalculatorParametersDataModel({
-            parameters : {
-                profitMargin: typeConverterSvc.convertToNumber(req.query.profitMargin),
-                optimisticRounding: typeConverterSvc.convertToBoolean(req.query.optimisticRounding)
-            }
-        })
+        return new CalculatorParametersDataModel(
+            typeConverterSvc.convertToNumber(req.query.profitMargin),
+            typeConverterSvc.convertToBoolean(req.query.optimisticRounding)
+        );
     }
 }
