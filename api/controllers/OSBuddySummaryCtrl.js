@@ -1,4 +1,5 @@
 const RootController = require('./RootController');
+const typeConverterSvc = require('./helpers/typeConverterSvc');
 const CalculatorParametersDataModel = require('../models/CalculatorParametersDataModel');
 const OSBuddySummarySvc = require('../services/bll/OSBuddySummarySvc');
 
@@ -11,8 +12,8 @@ module.exports = class extends RootController{
     static createParamModelObj(req){
         return new CalculatorParametersDataModel({
             parameters : {
-                profitMargin: Number(req.query.profitMargin),
-                optimisticRounding: JSON.parse(req.query.optimisticRounding)
+                profitMargin: typeConverterSvc.convertToNumber(req.query.profitMargin),
+                optimisticRounding: typeConverterSvc.convertToBoolean(req.query.optimisticRounding)
             }
         })
     }

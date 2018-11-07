@@ -14,12 +14,10 @@ module.exports = class extends DataComposerDecorator{
     }
 
     static createDataModelObj(dataObj){
-        return new OSRSGEGraphDataModel({
-            osrsGraph: {
-                daily: objectProcessorSvc.getLastItemOfObject(dataObj.daily),
-                average: objectProcessorSvc.getLastItemOfObject(dataObj.average)
-            }
-        })
+        return new OSRSGEGraphDataModel(
+            objectProcessorSvc.getLastItemOfObject(dataObj.daily),
+            objectProcessorSvc.getLastItemOfObject(dataObj.average)
+        );
     }
 
 
