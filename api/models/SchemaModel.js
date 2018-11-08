@@ -1,4 +1,4 @@
-const schemaValidator = require('./schemas/helpers/schemaValidator.js');
+const schemaValidator = require('./schemas/helpers/schemaValidator');
 
 module.exports = class {
     constructor(dataObj){

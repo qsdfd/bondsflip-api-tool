@@ -1,5 +1,5 @@
-const SchemaModel = require('./SchemaModel.js');
-const CalculatedPricesSchema = require('./schemas/CalculatedPricesSchema.js');
+const SchemaModel = require('./SchemaModel');
+const CalculatedPricesSchema = require('./schemas/CalculatedPricesSchema');
 
 
 module.exports = class extends SchemaModel{

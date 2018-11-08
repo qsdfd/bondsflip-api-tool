@@ -1,5 +1,5 @@
-const SchemaModel = require('./SchemaModel.js');
-const OSBuddyDataSchema = require('./schemas/OSBuddyDataSchema.js');
+const SchemaModel = require('./SchemaModel');
+const OSBuddyDataSchema = require('./schemas/OSBuddyDataSchema');
 
 
 module.exports = class extends SchemaModel{

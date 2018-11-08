@@ -1,6 +1,6 @@
-const DataComposerDecorator = require('./DataComposerDecorator.js');
-const OSRSGEAPIGraphFilter = require('../responseFilters/OSRSGEAPIGraphFilter.js');
-const OSRSGEGraphDataModel = require('../../../models/OSRSGEGraphDataModel.js');
+const DataComposerDecorator = require('./DataComposerDecorator');
+const OSRSGEAPIGraphFilter = require('../responseFilters/OSRSGEAPIGraphFilter');
+const OSRSGEGraphDataModel = require('../../../models/OSRSGEGraphDataModel');
 const objectProcessorSvc = require('./helpers/objectProcessorSvc');
 
 

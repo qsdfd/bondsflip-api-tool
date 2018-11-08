@@ -1,6 +1,6 @@
-const DataExtractor = require('./DataExtractor.js');
-const OSRSGEAPIClient = require('../httpClients/OSRSGEAPIClient.js');
-const cnsts = require('../../../constants.js');
+const DataExtractor = require('./DataExtractor');
+const OSRSGEAPIClient = require('../httpClients/OSRSGEAPIClient');
+const cnsts = require('../../../constants');
 
 
 module.exports = class extends DataExtractor{

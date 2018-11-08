@@ -1,6 +1,6 @@
-const DataExtractor = require('./DataExtractor.js');
-const OSBuddyAPISummaryGoogleApisClient = require('../httpClients/OSBuddyAPISummaryGoogleApisClient.js');
-const cnsts = require('../../../constants.js');
+const DataExtractor = require('./DataExtractor');
+const OSBuddyAPISummaryGoogleApisClient = require('../httpClients/OSBuddyAPISummaryGoogleApisClient');
+const cnsts = require('../../../constants');
 
 
 module.exports = class extends DataExtractor{

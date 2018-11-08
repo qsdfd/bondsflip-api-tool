@@ -1,6 +1,6 @@
-const DataComposerDecorator = require('./DataComposerDecorator.js');
-const OSBuddyAPISummaryGoogleApisFilter = require('../responseFilters/OSBuddyAPISummaryGoogleApisFilter.js');
-const OSBuddyDataModel = require('../../../models/OSBuddyDataModel.js');
+const DataComposerDecorator = require('./DataComposerDecorator');
+const OSBuddyAPISummaryGoogleApisFilter = require('../responseFilters/OSBuddyAPISummaryGoogleApisFilter');
+const OSBuddyDataModel = require('../../../models/OSBuddyDataModel');
 
 
 module.exports = class extends DataComposerDecorator{

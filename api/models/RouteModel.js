@@ -1,5 +1,5 @@
-const SchemaModel = require('./SchemaModel.js');
-const RouteSchema = require('./schemas/RouteSchema.js');
+const SchemaModel = require('./SchemaModel');
+const RouteSchema = require('./schemas/RouteSchema');
 
 
 module.exports = class extends SchemaModel{

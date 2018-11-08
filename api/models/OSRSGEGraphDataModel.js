@@ -1,5 +1,5 @@
-const SchemaModel = require('./SchemaModel.js');
-const OSRSGEGraphDataSchema = require('./schemas/OSRSGEGraphDataSchema.js');
+const SchemaModel = require('./SchemaModel');
+const OSRSGEGraphDataSchema = require('./schemas/OSRSGEGraphDataSchema');
 
 
 module.exports = class extends SchemaModel{

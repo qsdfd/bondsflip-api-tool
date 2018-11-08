@@ -1,4 +1,4 @@
-const axiosClient = require('./helpers/axiosClient.js');
+const axiosClient = require('./helpers/axiosClient');
 const urlQueryStringFormatterSvc = require('./helpers/urlQueryStringFormatterSvc.js')
 
 module.exports = class {

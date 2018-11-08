@@ -1,6 +1,6 @@
-const DataComposerDecorator = require('./DataComposerDecorator.js');
-const OSRSGEAPIFilter = require('../responseFilters/OSRSGEAPIFilter.js');
-const OSRSGEDataModel = require('../../../models/OSRSGEDataModel.js');
+const DataComposerDecorator = require('./DataComposerDecorator');
+const OSRSGEAPIFilter = require('../responseFilters/OSRSGEAPIFilter');
+const OSRSGEDataModel = require('../../../models/OSRSGEDataModel');
 
 
 module.exports = class extends DataComposerDecorator{

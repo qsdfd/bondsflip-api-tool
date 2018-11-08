@@ -1,4 +1,4 @@
-const HttpClient = require('./HttpClient.js');
+const HttpClient = require('./HttpClient');
 const cnsts = require('../../../constants');
 
 
